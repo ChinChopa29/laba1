@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-family: 'Roboto Mono', monospace;
+   background-image: url(img/bg.gif);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.sign {
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+}
+
+.white {
+   background-color: rgb(196, 196, 196);
+   color: rgb(54, 54, 54);
+}
+.dark {
+   background-color: rgb(54, 54, 54);
+   color: rgb(196, 196, 196);
+}
+.orange {
+   background-color: rgb(251, 187, 75);
+   color: rgb(255, 255, 255);
+}
+
+.input input {
+   outline: none;
+   font-size: 20px;
+   padding: 20px 40px;
+   margin-bottom: 20px;
+   border-radius: 7em;
+   border: none; 
+   background-color: rgb(54, 54, 54);
+   color: rgb(255, 255, 255);
+   text-align: right;
+   box-shadow: 5px 5px 12px 1px rgba(168, 168, 168, 0.5);
+   z-index: 100;
+   position: relative;
+   top: 110px;
+   
+}
+
+.nums {
+   display: grid;
+   grid-auto-columns: 200px;  
+   grid-template-rows: repeat(5, 1fr);
+   grid-template-columns: repeat(4, 1fr);
+   background-color: rgb(167, 167, 167);
+   padding: 120px 30px 30px 30px;
+   border-radius: 2em;
+}
+.num {
+   margin: 3px;
+   text-align: center;
+   font-weight: 900;
+   font-size: 20px;
+   padding: 15px;
+   border-radius: 10em;
+   box-shadow: 5px 5px 12px 1px rgba(168, 168, 168, 0.5);
+   cursor: pointer;
+}
+.dark:active {
+   box-shadow: inset 0px 0px 20px 10px rgba(6, 6, 6, 0.5);
+}
+.white:active {
+   box-shadow: inset 0px 0px 20px 10px rgba(123, 123, 123, 0.5);
+}
+.orange:active {
+   box-shadow: inset 0px 0px 20px 10px rgba(196, 157, 49, 0.5);
+}
